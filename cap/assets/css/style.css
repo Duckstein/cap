@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Montserrat:400,700|Cinzel+Decorative:400,700,900|Gochi+Hand);
 
+/* core overrides
+----------------- */
+
 body {
     background-color: #1A2229;
+	color: #e6e6e6;
 	font-family: 'Roboto', sans-serif;
 	background-size: 100% 100%;
 	background-attachment: fixed;
@@ -36,7 +40,7 @@ h1 {
 }
 
 .page-header {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .navbar-inverse {
@@ -171,7 +175,8 @@ h1 {
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-	background-color: #ECF0F1;
+	background-color: rgba(26, 34, 41, 0.5);
+	color: #fff;
 }
 
 .sidebar ul li a.active {
@@ -335,7 +340,8 @@ table.dataTable thead .sorting:after {
     content: "\f0dc";
     float: right;
     font-family: fontawesome;
-    color: rgba(50,50,50,.5);
+    color: rgba(255,255,255,1);
+	opacity: 0.75;
 }
 
 .btn-circle {
@@ -494,12 +500,42 @@ h3.panel-title {
 	background: #1e1e1e;
 }
 
+.panel-dark table {
+	color: #e6e6e6;
+}
+
 .panel-cyan .panel-heading {
 	background: #3498db;
 }
 
 .panel-cyan h3.panel-title {
 	color: #fff;
+}
+
+
+
+
+/* tables and datatables
+------------------------ */
+
+#offertable {
+	background-color: rgba(26, 34, 41, .75);
+}
+
+#offertable a:link, #offertable a:visited, #offertable a:focus {
+	color: #e6e6e6;
+}
+
+
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: rgba(0, 0, 0, .25);
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #000;
 }
 
 
