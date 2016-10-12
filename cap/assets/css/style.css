@@ -5,7 +5,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background-size: 100% 100%;
 	background-attachment: fixed;
-	background-image: url(../img/backgrounds/blurry_sea.jpg);
+	background-image: url(../img/backgrounds/blurry_bluer.jpg);
 }
 
 
@@ -33,6 +33,10 @@ h1 {
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: .25em;
+}
+
+.page-header {
+	border-bottom: 1px solid #000;
 }
 
 .navbar-inverse {
@@ -444,40 +448,59 @@ table.dataTable thead .sorting:after {
 	
 \* --------------------------------- */
 
-.card-table {
-	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
-	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
+/* panels
+--------- */
+
+.panel {
+	border: none;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	background: rgba(0, 0, 0, 0.25);
 }
 
-.card-table a:link,
-.card-table a:visited {
-	color: #7f8c8d;
+.panel-heading {
+	padding: 8px;
+	color: #eee;
+}
+
+h3.panel-title {
+	font-weight: 300;
+	font-size: 14px;
+	color: #999;
+}
+
+.panel a:link,
+.panel a:visited {
+	color: #e6e6e6;
 	display: block;
 }
 
-.card-table a:hover {
+.panel a:hover {
 	text-decoration: none;
 	color: #E74C3C;
 }
 
-div.card-table table {
-	border-bottom: 2px solid #1abc9c;
+.panel .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: none;
 }
 
-div.card-table table thead tr {
-	background: #1abc9c;
+
+
+
+/* variations */
+
+.panel-dark .panel-heading {
+	background: #1e1e1e;
+}
+
+.panel-cyan .panel-heading {
+	background: #3498db;
+}
+
+.panel-cyan h3.panel-title {
 	color: #fff;
 }
-
-div.card-table table thead tr th {
-	font-weight: 300;
-	border-bottom: none;
-}
-
-/* variationen */
-div.card-table-green-blue table thead tr {background: #3498db;}
-div.card-table-green-blue table {border-bottom: 2px solid #3498db;}
 
 
 
