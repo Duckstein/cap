@@ -538,6 +538,10 @@ h3.panel-title {
   background-color: #000;
 }
 
+.datepicker-days {
+	color: #333;
+}
+
 
 
 
@@ -570,8 +574,13 @@ h3.panel-title {
 \* --------------------------------- */
 
 .mce-content-body {
-	background: #e2e2e2;
-	border-bottom: 1px dotted #000;
+	background: rgba(255,255,255,.9);
+	border-radius: 4px;
+	color: #333;
+	padding: 4px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .mce-content-body img{
