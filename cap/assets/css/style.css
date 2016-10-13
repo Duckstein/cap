@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700|Montserrat:400,700|Cinzel+Decorative:400,700,900|Gochi+Hand);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 /* core overrides
 ----------------- */
@@ -18,25 +18,12 @@ body {
 /* typo
 ------- */
 
-.cap {
-	font-family: 'Cinzel Decorative', cursive;
-	text-transform: uppercase;
-	font-weight: 400;
-}
-
 .thin {
 	font-weight: 300;
 }
 
 .centered {
 	text-align: center;
-}
-
-h1 {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: .25em;
 }
 
 .page-header {
@@ -51,29 +38,9 @@ h1 {
 	border-width: 0;
 	background: rgba(45, 53, 60, 0); /* #2D353C */
 }
-
-.navbar-inverse .navbar-text {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: .25em;
-	color: #fff;
-}
-
-.display {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	font-weight: 700;
-}
 	
 
-.navbar-brand {
-	letter-spacing: 0.25em;
-}
 
-.navbar-inverse .navbar-brand {
-    color: #fff;
-}
 
 
 
@@ -170,7 +137,7 @@ h1 {
 }
 
 .sidebar ul li a {
-    color: #7f8c8d;
+	color: #7f8c8d;
 }
 
 .nav > li > a:hover,
@@ -585,4 +552,20 @@ h3.panel-title {
 
 .mce-content-body img{
 	width: 100% !important;
+}
+
+
+/* --------------------------------- *\
+
+	footer
+
+\* --------------------------------- */
+
+footer {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+footer p {
+	font-size: 11px;
 }
