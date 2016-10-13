@@ -1,0 +1,104 @@
+/* --------------------------------- *\
+
+	CAP 7.3
+	
+	login css
+	
+	v1.0	2016-01-20 | jd
+
+\* --------------------------------- */
+
+
+
+
+/* core
+------- */
+
+body {
+	background: #000;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+body#logout {
+	background: #c0392b;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 30px;
+}
+
+
+
+
+/* typo
+------- */
+
+.cap {
+	font-family: 'Cinzel Decorative', cursive;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.display {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	padding-top: 60px;
+	font-size: 55px;
+}
+
+
+
+
+/* form elements
+---------------- */
+
+.btn-black {
+	background-color: Transparent;
+	border-color: #fff;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .5em;
+}
+
+.btn-black:hover,
+.btn-black:focus {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+/* media query
+-------------- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 415px) {
+}
+
