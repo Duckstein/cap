@@ -325,6 +325,58 @@ table.dataTable thead .sorting:after {
 
 
 
+/* sortable gallery
+------------------- */
+ul.sortable {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative !important;
+}
+
+ul.sortable li {
+	width: 200px;
+	height: 160px;
+	float: left;
+	margin: 0 15px 15px 0;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	background: rgba(0, 0, 0, 0.25);
+	cursor: move;
+}
+
+ul.sortable li img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	float: left;
+}
+
+ul.sortable li.ui-sortable-helper {
+	-webkit-box-shadow: 1px 1px 5px 5px rgba(66,139,202,0.75);
+	-moz-box-shadow: 1px 1px 5px 5px rgba(66,139,202,0.75);
+	box-shadow: 1px 1px 5px 5px rgba(66,139,202,0.75);
+}
+
+ul.sortable li.placeholder {
+	width: 200px;
+	height: 160px;
+	float: left;
+	background: rgba(0,0,0,0);
+	border: 2px dashed #bbb;
+	display: block;
+	opacity: 0.6;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+
+
+
 /* tiny mce editor
 ------------------ */
 
