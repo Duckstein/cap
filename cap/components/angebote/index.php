@@ -11,6 +11,16 @@ include($include_pfad."init.php");
 
 
 
+/* url bestimmen
+---------------- */
+
+// benötigt für statusupdate
+$queryString = strstr($_SERVER['REQUEST_URI'], '?');
+$queryString = ($queryString===false) ? '' : substr($queryString, 1);
+
+
+
+
 /* routines
 ----------- */
 
@@ -51,6 +61,35 @@ if($deleteid){
 				</div>
 			</div>
 	';
+	
+}
+
+
+
+
+// statusupdate
+if($newstatus){
+	
+	$sqla = "UPDATE STRA_angebote SET online='$newstatus' WHERE id='$id'";		
+	$resultata = mysql_query($sqla,$db) or die ("MySQL-Fehler: " . mysql_error());
+	
+	$content.= '
+					<div class="row mt">
+						<div class="col-lg-12">
+							<div class="alert alert-success alert-dismissible" role="alert">
+								
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h1>Updated id ' .$id. '</h1>
+								
+							</div>
+						</div>
+					</div>
+	';
+	
+	// entfernt params aus uri
+	$trim = array('&newstatus=', "&id=$id", 'ja', 'nein');
+	$trimmed = str_replace($trim, "", $queryString);
+	$queryString = $trimmed;
 	
 }
 
@@ -107,10 +146,10 @@ while($row=mysql_fetch_array($result)){
 	$online =	$row['online'];
 	$teaser =	$row['teaser'];
 	
-	if($online==1){
-		$status = '<span class="label label-success"><i class="fa fa-check fa-fw"></i></span>';
+	if($online=='ja'){
+		$status = '<a class="btn btn-success btn-xs" href="index.php?' .$queryString. '&amp;newstatus=nein&amp;id=' .$id. '" title="toggle on/offline"><i class="fa fa-check fa-fw"></i></a>';
 	}else{
-		$status = '<span class="label label-danger"><i class="fa fa-times fa-fw"></i></span>';
+		$status = '<a class="btn btn-danger btn-xs" href="index.php?' .$queryString. '&amp;newstatus=ja&amp;id=' .$id. '" title="toggle off/online"><i class="fa fa-times fa-fw"></i></a>';
 	}
 	
 	$content.= '
