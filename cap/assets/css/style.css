@@ -327,6 +327,11 @@ table.dataTable thead .sorting:after {
 
 /* sortable gallery
 ------------------- */
+
+button#response {
+	color: #ffffff;
+}
+
 ul.sortable {
 	width: 100%;
 	float: left;
